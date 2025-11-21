@@ -1,70 +1,81 @@
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body, html {
-  height: 100%
-}
-
-.bgimg {
-  /* Background image */
-  background-image: url('./images/ai-ballon.png');
-  /* Full-screen */
-  height: 100%;
-  /* Center the background image */
-  background-position: center;
-  /* Scale and zoom in the image */
-  background-size: cover;
-  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-  position: relative;
-  /* Add a white text color to all elements inside the .bgimg container */
-  color: white;
-  /* Add a font */
-  font-family: "Courier New", Courier, monospace;
-  /* Set the font-size to 25 pixels */
-  font-size: 30px;
-}
-
-/* Position text in the top-left corner */
-.topleft {
-  position: absolute;
-  top: 5px;
-  left: 100px;
-  text-align: center;
-  color: black;
-}
-
-/* Position text in the bottom-left corner */
-.bottomleft {
-  position: absolute;
-  bottom: 110;
-  left: 100px;
-  top: 100px;
-}
-
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-/* Style the <hr> element */
-hr {
-  margin: auto;
-  width: 70%;
-  border-color: yellow;
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
 
-.arisethree {
-  background: #1F509A;
-  color: white;
-  padding: 10px 30px;
-  border: 1px solid #1F509A;
-  border-radius: 10px;
+
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
-a:link {
-  text-decoration: none;
+
+body {
+    background-image: url("images/edwin-andrade-6liebVeAfrY-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
+
+.logo-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+
+
+
+.arise-container {
+    margin-top: 30px;
+    padding: 60px;
+}
+
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+button.link {
+    padding: 10px 30px 10px 20px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #E67E22;
+}
+
+
+button.link {
+    padding: 10px 30px 10px 20px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #E67E22;
+}
+
+
+button.register {
+    padding: 15px 40px 15px 40px;
+    border-radius: 10px;
+    border: 2px solid #9B5DE0;
+    background-color: #9B5DE0;
+    color: white;
+}
+
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+img[src$=".png"] {
+    width: 100px;
+    height: 100%;
+}
